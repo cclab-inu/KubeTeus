@@ -1,0 +1,47 @@
+# Deploy A
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx1
+  name: nginx1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx1
+  template:
+    metadata:
+      labels:
+        app: nginx1
+    spec:
+      containers:
+        - image: nginx:latest
+          #imagePullPolicy: IfNotPresent
+          name: nginx1
+          ports:
+          - containerPort: 5050
+---
+# Deplot B
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx2
+  name: nginx2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx2
+  template:
+    metadata:
+      labels:
+        app: nginx2
+    spec:
+      containers:
+        - image: nginx:latest
+          #imagePullPolicy: IfNotPresent
+          name: nginx2
+          ports:
+          - containerPort: 8080

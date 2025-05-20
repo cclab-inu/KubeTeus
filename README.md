@@ -67,12 +67,7 @@ checkoutservice-6bbccb4788-cw66j         1/1     Running   0          3m13s
 currencyservice-795445fcb8-84czn         1/1     Running   0          3m12s
 emailservice-c498b5f8b-6hkwb             1/1     Running   0          3m13s
 frontend-548c468bb9-m6vmc                1/1     Running   0          3m13s
-loadgenerator-85757f9958-cbskk           1/1     Running   0          3m12s
-paymentservice-6578f9dcfd-xtwwc          1/1     Running   0          3m13s
-productcatalogservice-5865bf7d98-9l7mz   1/1     Running   0          3m13s
-recommendationservice-758d9b68c4-66z9d   1/1     Running   0          3m13s
-redis-cart-7ff8f4d6ff-g7ttr              1/1     Running   0          3m12s
-shippingservice-65cc774694-g5dgd         1/1     Running   0          3m12s
+...
 ```
 
 ### 🔄 Running KubeTeus
@@ -96,8 +91,7 @@ The default model internally maps to:
 ```
 cclabadmin/codegemma-7b-it-network
 ```
-> ⚠️ **Note**: The default model (e.g., `cclabadmin/codegemma-7b-it-network`) is private and not publicly released. However, we provide the dataset used for fine-tuning and the full training pipeline in this repository, allowing researchers to replicate or adapt the model independently.
-
+> ⚠️ **Note**: The default model (e.g., `cclabadmin/codegemma-7b-it-network`, `entity_models.bin`) is private and not publicly released. However, we provide the dataset used for fine-tuning and the full training pipeline in this repository, allowing researchers to replicate or adapt the model independently.
 
 #### 🧩 User Mode (Intent-Based Generation)
 In user mode, users can provide natural language prompts via CLI to automatically generate Kubernetes network policies.

@@ -1,0 +1,12 @@
+# Pod A
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: httpd
+  name: httpd
+  namespace: default
+spec:
+  containers:
+    - image: httpd:latest
+      name: httpd

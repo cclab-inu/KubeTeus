@@ -1,0 +1,10 @@
+user:
+  home: /home/cclab/KubeTeus
+  huggingface-token: "hf_xxxxxxxxxxxxxxxxx"                            # huggingface token to use when logging in
+parameter:
+  project-name: test-ko-alpaca                                # Project name to create
+  data-path: royboy0416/ko-alpaca                             # Dataset address
+  learning-rate: 2e-4
+  train-batch: 8
+  train-epochs: 3
+  model-max-length: 2048
