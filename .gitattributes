@@ -1,4 +1,2 @@
-pkg/** linguist-documentation=false
-pkg/** linguist-vendored=false
 *.go linguist-detectable=true
 *.xslt linguist-detectable=false
