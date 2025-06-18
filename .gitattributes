@@ -1,0 +1,4 @@
+demo/** linguist-documentation=false
+demo/** linguist-vendored=false
+*.go linguist-detectable=true
+*.xslt linguist-detectable=false
