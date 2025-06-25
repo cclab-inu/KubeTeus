@@ -11,7 +11,7 @@ import (
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 	client := &http.Client{}
-	url := "http://localhost:9090/intent" // 컨트롤러의 엔드포인트
+	url := "http://localhost:9090/intent"
 
 	for {
 		fmt.Print("Enter your intent (or type 'q' to quit): ")
